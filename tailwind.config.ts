@@ -13,6 +13,10 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        'serif': ['Playfair Display', 'serif'],
+        'sans': ['Inter', 'sans-serif'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -47,6 +51,17 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        // Cafe-specific colors
+        coffee: {
+          dark: "hsl(var(--coffee-dark))",
+          medium: "hsl(var(--coffee-medium))",
+          light: "hsl(var(--coffee-light))",
+        },
+        cream: "hsl(var(--cream))",
+        gold: "hsl(var(--gold))",
+        warm: {
+          brown: "hsl(var(--warm-brown))",
+        },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
@@ -62,6 +77,15 @@ export default {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+      },
+      backgroundImage: {
+        'gradient-warm': 'var(--gradient-warm)',
+        'gradient-coffee': 'var(--gradient-coffee)',
+        'gradient-cream': 'var(--gradient-cream)',
+      },
+      boxShadow: {
+        'warm': 'var(--shadow-warm)',
+        'elegant': 'var(--shadow-elegant)',
       },
       keyframes: {
         "accordion-down": {
@@ -80,10 +104,22 @@ export default {
             height: "0",
           },
         },
+        "fadeIn": {
+          "0%": { 
+            opacity: "0",
+            transform: "translateY(20px)"
+          },
+          "100%": { 
+            opacity: "1",
+            transform: "translateY(0)"
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "fade-in": "fadeIn 1s ease-in-out",
+        "bounce": "bounce 2s infinite",
       },
     },
   },

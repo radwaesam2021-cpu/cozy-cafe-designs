@@ -2,39 +2,54 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Cafe Design System - Warm coffee-inspired palette */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 35 20% 97%;
+    --foreground: 25 30% 15%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 35 25% 95%;
+    --card-foreground: 25 30% 15%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 35 25% 95%;
+    --popover-foreground: 25 30% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 25 65% 35%;
+    --primary-foreground: 35 20% 97%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 35 15% 85%;
+    --secondary-foreground: 25 30% 15%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 35 10% 90%;
+    --muted-foreground: 25 15% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 45 85% 65%;
+    --accent-foreground: 25 30% 15%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 35 15% 85%;
+    --input: 35 15% 90%;
+    --ring: 25 65% 35%;
+
+    /* Cafe-specific colors */
+    --coffee-dark: 25 50% 25%;
+    --coffee-medium: 25 45% 45%;
+    --coffee-light: 35 35% 75%;
+    --cream: 35 20% 92%;
+    --gold: 45 85% 65%;
+    --warm-brown: 25 65% 35%;
+    
+    /* Gradients */
+    --gradient-warm: linear-gradient(135deg, hsl(25 65% 35%), hsl(45 85% 65%));
+    --gradient-coffee: linear-gradient(180deg, hsl(25 50% 25%), hsl(25 45% 45%));
+    --gradient-cream: linear-gradient(180deg, hsl(35 20% 97%), hsl(35 15% 85%));
+    
+    /* Shadows */
+    --shadow-warm: 0 10px 30px -10px hsl(25 65% 35% / 0.2);
+    --shadow-elegant: 0 20px 50px -15px hsl(25 50% 25% / 0.3);
 
     --radius: 0.5rem;
 
